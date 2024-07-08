@@ -26,6 +26,20 @@ h1:hover {
     animation: ani 5s linear infinite;
 }
 
+@keyframes ani {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
 h2 {
     font-family: var(--default-font-family);
     background: linear-gradient(90.2deg, rgb(89, 185, 88) 1.8%, rgb(242, 174, 67) 50.9%, rgb(219, 82, 76) 98.7%);
@@ -56,21 +70,6 @@ span {
 
 span.transition{
     opacity: 1;
-}
-
- 
-@keyframes ani {
-    0% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 400 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
 }
 
 nav {
@@ -180,6 +179,13 @@ section ul .list {
         max-width: 50%;
         display: block;
         margin: 0 auto;
+    }
+
+    div .project {
+        width: 600px;
+        position: relative;
+        right: -120px;
+        display:inline-block;
     }
 
 
